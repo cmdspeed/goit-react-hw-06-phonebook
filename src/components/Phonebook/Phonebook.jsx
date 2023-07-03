@@ -20,6 +20,8 @@ export const Phonebook = ({ handleSubmit }) => {
 
     const form = event.currentTarget;
     handleSubmit(name, number);
+    setName('');
+    setNumber('');
     form.reset();
   };
 
